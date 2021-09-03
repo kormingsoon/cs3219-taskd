@@ -1,5 +1,13 @@
 # CS3219 Task D: Pub-sub messaging 
 
+## **Student Information**
+
+Name: Kor Ming Soon
+Matriculation Number: A0201975A
+Github Repo: https://github.com/kormingsoon/cs3219-taskd
+
+---
+
 This repository is for my submission for Task D for the OTOT assignment in CS3219. This is an introductory repository to setting up Kafka with Docker to carry out simple pub-sub messaging, with ZooKeeper managing Kafka nodes.
 
 In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zookeepers for the management of the Kafka nodes. This section is split into two: deploying of the kafka with docker with pub-sub messaging, and also election of a new master node from forced failure.
@@ -22,7 +30,7 @@ In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zook
     </div>
     <br>
     <div style="text-align:center">
-        <img src="/cs3219-taskd/img/dockergui.png">
+        <img src="./img/dockergui.png">
         <p align="center"> GUI (Docker-Desktop) Confirmation </p>
     </div>
 
@@ -31,7 +39,7 @@ In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zook
         docker exec -it cs3219-taskd_kafka-1_1 bash
 
     <div style="text-align:center">
-        <img src="/cs3219-taskd/img/nodebash.png">
+        <img src="./img/nodebash.png">
     </div>
 
 5. We will begin by creating the ```topic```, after which we will mock the ```producer``` and ```consumer``` of the messages transmitted between the two parties. For the topic, we will create it to be only have replication factor of 1, and belonging only in 1 partition.
