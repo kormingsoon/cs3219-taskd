@@ -63,7 +63,7 @@ In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zook
 
         docker exec -it cs3219-taskd_kafka-1_1 bash
 
-        kafka-console-consumer --bootstrap-server kafka-1:9092 --topic sample-topic --from-beginning
+        kafka-console-consumer --bootstrap-server kafka-1:9092 --topic first_topic --from-beginning
 
 8. On the producer console, try typing some messages. You should see the message sent to the consumer console. Look at the example below.
 
