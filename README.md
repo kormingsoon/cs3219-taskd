@@ -53,11 +53,11 @@ In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zook
     
     A successful command will yield the following:
 
-        Created topic sample-topic.
+        Created topic first_topic.
 
 6. Run the following command to enter the producer console to publish events into the topic.
 
-        kafka-console-producer --broker-list kafka-1:9092 --topic sample-topic
+        kafka-console-producer --broker-list kafka-1:9092 --topic first_topic
 
 7. Launch another terminal window. Likewise, execute the bash command but now enter the consumer console to view the events of the topic.
 
