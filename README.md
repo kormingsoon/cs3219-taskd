@@ -44,7 +44,7 @@ In this repository, we are setting 3 nodes in the Kafka server as well as 3 Zook
 
 5. We will begin by creating the ```topic```, after which we will mock the ```producer``` and ```consumer``` of the messages transmitted between the two parties. For the topic, we will create it to be only have replication factor of 1, and belonging only in 1 partition.
 
-        kafka-topics --create --bootstrap-server zookeeper-1:2181 --replication-factor 2 --partitions 3  --topic sample-topic
+        kafka-topics --bootstrap-server 127.0.0.1:9092 --topic first_topic --create --partitions 3 --replication-factor 1
     
     
     5.1 In the event the following shows up, restart the Zookeeper servers and Nodes and repeat the topic creation command. 
